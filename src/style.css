@@ -1,16 +1,16 @@
 @font-face {
   font-family: Syne;
-  src: url(/fonts/Syne-Bold.ttf);
+  src: local("Syne") url(./fonts/Syne-Bold.ttf) format("truetype");
 }
 
 @font-face {
-  font-family: 'Space Mono';
-  src: url(/fonts/SpaceMono-Regular.ttf);
+  font-family: "Space Mono";
+  src: local("Space Mono") url(./fonts/SpaceMono-Regular.ttf) format("truetype");
 }
 
 @font-face {
   font-family: UnicaOne;
-  src: url(/fonts/UnicaOne-Regular.ttf);
+  src: local("UnicaOne") url(./fonts/UnicaOne-Regular.ttf) format("truetype");
 }
 
 /* Works on Firefox */
@@ -41,7 +41,7 @@ body {
   color: #fff;
   padding: 0;
   margin: 0;
-  font-family: 'Space Mono';
+  font-family: "Space Mono";
   font-size: 14px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -75,7 +75,6 @@ a {
 
 .logo-text {
   display: block;
-  position: absolute;
   width: 100%;
   margin-top: 26px;
   font-family: UnicaOne;
@@ -108,7 +107,7 @@ a {
   border: 1px solid #373737;
   border-radius: 5px;
   background-color: #111;
-  font-family: 'Space Mono', sans-serif;
+  font-family: "Space Mono", sans-serif;
   text-align: center;
   line-height: inherit;
   color: #fff;
@@ -213,7 +212,7 @@ li {
 }
 
 .link-other {
-  font-family: 'Space Mono', sans-serif;
+  font-family: "Space Mono", sans-serif;
   color: #7e7e7e;
   font-style: normal;
   text-decoration: underline;
@@ -239,7 +238,7 @@ li {
 .сopyright {
   margin-top: 15px;
   margin-bottom: 15px;
-  font-family: 'Space Mono', sans-serif;
+  font-family: "Space Mono", sans-serif;
   color: #2d2d2d;
   text-align: center;
 }
@@ -349,14 +348,14 @@ li {
 
 .card-price {
   margin-top: 4px;
-  font-family: 'Space Mono', sans-serif;
+  font-family: "Space Mono", sans-serif;
   color: #fff;
 }
 
 .card-title {
   margin-top: 4px;
   margin-bottom: 8px;
-  font-family: 'Space Mono', sans-serif;
+  font-family: "Space Mono", sans-serif;
   color: #aeaeae;
 }
 
@@ -506,7 +505,7 @@ p {
   background-color: #1100ff;
   border-radius: 5px;
   border: 1px solid #373737;
-  font-family: 'Space Mono';
+  font-family: "Space Mono";
 }
 
 .article {
@@ -623,4 +622,17 @@ p {
 
 .header-template {
   height: 60px;
+}
+
+.cart {
+  color: #2d2d2d;
+  font-size: 24px;
+}
+
+.cart:hover {
+  color: #0077ff;
+}
+
+.cart.active {
+  color: #0077ff;
 }
