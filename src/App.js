@@ -3,11 +3,32 @@ import "./style.css";
 import Header from "./componets/Header";
 import Footer from "./componets/Footer";
 import Items from "./componets/Items";
+import Links from "./componets/Links";
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      links: [
+        {
+          id: 1,
+          name: "Vk",
+          href: "https://vk.com/thefoxxstuff",
+          ico: "Vk-28.svg"
+        },
+        {
+          id: 2,
+          name: "Youtube",
+          href: "https://thefoxxstuff.bandcamp.com",
+          ico: "Youtube-28.svg"
+        },
+        {
+          id: 3,
+          name: "Bandcamp",
+          href: "https://thefoxxstuff.bandcamp.com",
+          ico: "Bandcamp-28.svg"
+        }
+      ],
       items: [
         {
           id: 1,
@@ -36,12 +57,13 @@ class App extends React.Component {
       ]
     };
   }
+
   render() {
     return (
       <div>
         <div class="container">
           <Header />
-          <div class="h1-text">Releases</div>
+          <Links links={this.state.links} />
           <Items items={this.state.items} />
           <Footer />
         </div>

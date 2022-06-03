@@ -1,16 +1,16 @@
 @font-face {
   font-family: Syne;
-  src: local("Syne") url(./fonts/Syne-Bold.ttf) format("truetype");
+  src: url(./fonts/Syne-Bold.ttf) format("truetype");
 }
 
 @font-face {
   font-family: "Space Mono";
-  src: local("Space Mono") url(./fonts/SpaceMono-Regular.ttf) format("truetype");
+  src: url(./fonts/SpaceMono-Regular.ttf) format("truetype");
 }
 
 @font-face {
   font-family: UnicaOne;
-  src: local("UnicaOne") url(./fonts/UnicaOne-Regular.ttf) format("truetype");
+  src: url(./fonts/UnicaOne-Regular.ttf);
 }
 
 /* Works on Firefox */
