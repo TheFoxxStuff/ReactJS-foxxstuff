@@ -8,7 +8,7 @@ export class Items extends Component {
         <div class="h1-text">Releases</div>
         <div class="grid-cards">
           {this.props.items.map((el) => (
-            <Item key={el.id} item={el} />
+            <Item key={el.id} item={el} onAdd={this.props.onAdd} />
           ))}
         </div>
       </main>

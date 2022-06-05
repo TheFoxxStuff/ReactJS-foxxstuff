@@ -1,7 +1,26 @@
 import React, { useState } from "react";
 import { FaShoppingCart } from "react-icons/fa";
+import Order from "./Order";
 
-export default function Header() {
+const showOrders = (props) => {
+  return (
+    <div>
+      {props.orders.map((el) => (
+        <Order onDelete={props.onDelete} key={el.id} item={el} />
+      ))}
+    </div>
+  );
+};
+
+const ShowNothing = () => {
+  return (
+    <div>
+      <div>NOt tovar</div>
+    </div>
+  );
+};
+
+export default function Header(props) {
   let [cartOpen, setCartOpen] = useState(false);
 
   return (
@@ -18,6 +37,7 @@ export default function Header() {
       {cartOpen && (
         <div>
           <h2>Корзина</h2>
+          {props.orders.length > 0 ? showOrders(props) : ShowNothing()}
         </div>
       )}
     </div>
