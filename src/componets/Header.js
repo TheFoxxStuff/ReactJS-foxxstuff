@@ -15,7 +15,7 @@ const showOrders = (props) => {
 const ShowNothing = () => {
   return (
     <div>
-      <div>NOt tovar</div>
+      <div>None</div>
     </div>
   );
 };
@@ -36,7 +36,7 @@ export default function Header(props) {
       />
       {cartOpen && (
         <div>
-          <h2>Корзина</h2>
+          <div class="h1-text">Cart</div>
           {props.orders.length > 0 ? showOrders(props) : ShowNothing()}
         </div>
       )}
